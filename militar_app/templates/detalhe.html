@@ -1,0 +1,17 @@
+{% extends "layout.html" %}
+{% block title %}
+
+{% endblock%}
+{% block content %}
+      
+<p>NIM:{{militar.NIM}}</p>
+<p>Patente:{{militar.Patente}}</p>
+<p>CC:{{militar.CC}}</p>
+<p>Nome:{{militar.Nome}}</p>
+<p>Apelido:{{militar.Apelido}}</p>
+<p>NIF:{{militar.NIF}}</p>
+<p>Ramo:{{militar.Ramo}}</p>
+
+<a href="{{url_for('editar',id=militar.NIM)}}">editar</a>
+<a href="{{url_for('eliminar',id=militar.NIM)}}">eliminar</a>
+{% endblock%}  

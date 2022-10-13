@@ -1,0 +1,29 @@
+{% extends "layout.html" %}
+{% block title %}
+
+{% endblock%}
+{% block content %}
+<table>
+    <thead>
+        <tr>
+            <th>NIM</th>
+            <th>Patente</th>
+            <th>Nome</th>
+            <th>Apelido</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for m in militares %}
+        <tr>
+            <td>{{m.NIM}}</td>
+            <td>{{m.Patente}}</td>
+            <td>{{m.Nome}}</td>
+            <td>{{m.Apelido}}</td>
+            <td><a href="{{url_for('ver',id=m.NIM)}}">Ver</a></td>
+            <td><a href="{{url_for('editar',id=m.NIM)}}">Editar</a></td>
+            <td><a href="{{url_for('eliminar',id=m.NIM)}}">eliminar</a></td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+{% endblock%}  

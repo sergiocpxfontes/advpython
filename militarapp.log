@@ -1,0 +1,16 @@
+2022-10-12 11:24:26,338 http://127.0.0.1:5000/webservice
+2022-10-12 11:24:26,348 http://127.0.0.1:5000/webservice/4578
+2022-10-12 11:24:26,351 http://127.0.0.1:5000/webservicepost
+2022-10-12 11:29:11,690 http://127.0.0.1:5000/webservice
+2022-10-12 11:29:11,692 Starting new HTTP connection (1): 127.0.0.1:5000
+2022-10-12 11:29:11,696 http://127.0.0.1:5000 "GET /webservice HTTP/1.1" 200 1070
+2022-10-12 11:29:11,698 [{"CC": "Antonio", "Nome": "Antonio", "Apelido": "Silva", "NIF": "45678", "DataNascimento": "12-12-1986", "NIM": "4578", "Patente": "General", "Ramo": ""}, {"CC": "", "Nome": "", "Apelido": "", "NIF": "", "DataNascimento": "12-12-1986", "NIM": "", "Patente": "", "Ramo": ""}, {"CC": "1234", "Nome": "Mario", "Apelido": "Jos\u00e9", "NIF": "45678", "DataNascimento": "12-12-1986", "NIM": "4579", "Patente": "General", "Ramo": ""}, {"CC": "2345", "Nome": "Maria", "Apelido": "Antunes", "NIF": "45678", "DataNascimento": "12-12-1986", "NIM": "4580", "Patente": "General", "Ramo": ""}, {"CC": "4567", "Nome": "Marco", "Apelido": "Antunes", "NIF": "45678", "DataNascimento": "12-12-1986", "NIM": "4582", "Patente": "General", "Ramo": ""}, {"CC": "rewr", "Nome": "rwe", "Apelido": "rewr", "NIF": "rwe", "DataNascimento": "12-12-1986", "NIM": "2345", "Patente": "wer", "Ramo": ""}]
+2022-10-12 11:29:11,699 http://127.0.0.1:5000/webservice/4578
+2022-10-12 11:29:11,700 Starting new HTTP connection (1): 127.0.0.1:5000
+2022-10-12 11:29:11,703 http://127.0.0.1:5000 "GET /webservice/4578 HTTP/1.1" 200 188
+2022-10-12 11:29:11,704 http://127.0.0.1:5000/webservicepost
+2022-10-12 11:29:11,705 Starting new HTTP connection (1): 127.0.0.1:5000
+2022-10-12 11:29:11,708 http://127.0.0.1:5000 "POST /webservicepost HTTP/1.1" 200 2
+2022-10-12 11:29:39,462 http://127.0.0.1:5000/webservice
+2022-10-12 11:29:39,470 http://127.0.0.1:5000/webservice/4578
+2022-10-12 11:29:39,474 http://127.0.0.1:5000/webservicepost

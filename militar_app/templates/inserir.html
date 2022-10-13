@@ -1,0 +1,17 @@
+{% extends "layout.html" %}
+{% block title %}
+
+{% endblock%}
+{% block content %}
+<form action="{{url_for('inserir')}}" method="post">
+
+<p>NIM:<input name="nim" type="text" value=""/></p>
+<p>Patente:<input name="patente" type="text" value=""/></p>
+<p>CC:<input name="cc" type="text" value=""/></p>
+<p>Nome:<input name="nome" type="text" value=""/></p>
+<p>Apelido:<input name="apelido" type="text" value=""/></p>
+<p>NIF:<input name="nif" type="text" value=""/></p>
+<p>Ramo:<input name="ramo" type="text" value=""/></p>
+<input type="submit" >
+</form>
+{% endblock%}  

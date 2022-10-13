@@ -1,0 +1,17 @@
+{% extends "layout.html" %}
+{% block title %}
+
+{% endblock%}
+{% block content %}
+<form action="{{url_for('atualizar')}}" method="post">
+<input name="nim" type="hidden" value="{{militar.NIM}}"/>
+<p>NIM:{{militar.NIM}}</p>
+<p>Patente:<input name="patente" type="text" value="{{militar.Patente}}"/></p>
+<p>CC:<input name="cc" type="text" value="{{militar.CC}}"/></p>
+<p>Nome:<input name="nome" type="text" value="{{militar.Nome}}"/></p>
+<p>Apelido:<input name="apelido" type="text" value="{{militar.Apelido}}"/></p>
+<p>NIF:<input name="nif" type="text" value="{{militar.NIF}}"/></p>
+<p>Ramo:<input name="ramo" type="text" value="{{militar.Ramo}}"/></p>
+<input type="submit" >
+</form>
+{% endblock%}  
