@@ -52,6 +52,8 @@ class Tests(unittest.TestCase):
         self.assertDictEqual(valoresperado,valorresutado)
 
 
+print('oi')
+
 
 if __name__=='__main__':
     unittest.main()
