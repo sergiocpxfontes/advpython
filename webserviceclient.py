@@ -23,8 +23,11 @@ except Exception as e:
 # consulta webservice detalhe
 url = "http://127.0.0.1:5000/webservice/4578"
 logging.info(url)
-resposta = requests.get(url,headers=Headers)
-print(resposta.json())
+try:
+    resposta = requests.get(url,headers=Headers)
+    print(resposta.json())
+except Exception as e:
+    logging.critical(e)
 
 # post webservice
 url = "http://127.0.0.1:5000/webservicepost"
