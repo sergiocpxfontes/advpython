@@ -1,7 +1,7 @@
 import logging
 from flask import Flask,render_template,redirect,url_for, request,jsonify
-from militarcls import Militar
-from utilscls import Utils
+from militar_app.militarcls import Militar
+from militar_app.utilscls import Utils
 app = Flask(__name__)
 
 logging.basicConfig(filename="militarapp.log",format='%(asctime)s %(message)s',level=logging.INFO)
