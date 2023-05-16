@@ -7,6 +7,22 @@ from sqlite3 import Error
 class Utils():
     CAMINHODB = "militar.db"
     @staticmethod
+    def StarDatabase(sql):
+        result=False
+        conn = None
+        try:
+            conn = sqlite3.connect(Utils.CAMINHODB)
+            c = conn.cursor()
+            c.execute(sql)
+            conn.commit()
+            result=True
+        except Error as e:
+            print(e)
+        finally:
+            if conn:
+                conn.close()
+        return result
+    @staticmethod
     def SelectSQL(sql):
         lista = []
         conn = None
