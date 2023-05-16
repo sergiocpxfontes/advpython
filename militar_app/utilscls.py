@@ -5,7 +5,7 @@ import sqlite3
 from sqlite3 import Error
 
 class Utils():
-    CAMINHODB = "D:\\Projects\\Rumos\\Python_102022\\web\\militar_app\\militar.db"
+    CAMINHODB = "militar.db"
     @staticmethod
     def SelectSQL(sql):
         lista = []
