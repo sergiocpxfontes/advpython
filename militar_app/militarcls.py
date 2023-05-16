@@ -1,5 +1,5 @@
-from militar_app.individuocls import Individuo
-from militar_app.utilscls import Utils
+from individuocls import Individuo
+from utilscls import Utils
 class Militar(Individuo):
     def __init__(self,nim="",patente="", cc="", nome="", apelido="", nif=""):
         #super()).__init__(cc, nome, apelido, nif)
