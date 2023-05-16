@@ -46,7 +46,7 @@ class Tests(unittest.TestCase):
 
 
     def test_dictio(self):
-        valorinicial = "{ \"nome\":\"Maria\", \"apelido\":\"Silva\"}" 
+        valorinicial = "{ \"nome\":\"Antonio\", \"apelido\":\"Silva\"}" 
         valoresperado = {"nome":"Antonio","apelido":"Silva"}
         valorresutado =Utils.ImpostarJSON(valorinicial)
         self.assertDictEqual(valoresperado,valorresutado)
